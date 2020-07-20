@@ -1,0 +1,41 @@
+# Site settings
+name: Timo Zacherl
+title: Timo Zacherl | Full-Stack Software Engineer
+description: Full-Stack Webentwickler mit Fokus auf die Entwicklung von zuverlässigen Webanwendungen mit modernsten Technologien.
+url: https://timozacherl.com/
+baseurl: ''
+email: t.zacherl@icloud.com
+cover: https://timozacherl.com/img/og.png
+logo: https://timozacherl.com/img/emojis/technologist.png
+resume: https://timozacherl.com/resume.pdf
+social:
+  - title: email
+    url: mailto:t.zacherl@icloud.com
+  - title: twitter
+    url: https://twitter.com/timoxdev
+  - title: codepen
+    url: https://codepen.io/timozacherl
+  - title: github
+    url: https://github.com/timozacherl
+
+# Build settings
+markdown: kramdown
+
+exclude:
+  - 'Gemfile'
+  - 'Gemfile.lock'
+  - '*.gemspec'
+  - 'README.md'
+  - 'node_modules'
+  - 'build'
+  - 'gulpfile.js'
+  - 'package.json'
+
+keep_files:
+  - 'CNAME'
+  - '.git'
+  - '.gitignore'
+
+plugins_dir:
+  - jekyll-minifier
+  - jekyll-sitemap
