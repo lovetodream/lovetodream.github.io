@@ -1,4 +1,5 @@
 languages:
+  - item: Swift
   - item: TypeScript
   - item: JavaScript (ES6)
   - item: HTML
