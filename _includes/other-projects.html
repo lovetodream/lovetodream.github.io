@@ -10,7 +10,18 @@
       </div>
       <p>{{project.description}}</p>
       <div class="project__used">
-        {% for item in project.used %}
+        {% if project.code %}
+        <span class="project__used__item"
+          ><a href="{{project.code}}"
+            ><img
+              height="14px"
+              src="{{site.baseurl}}/img/social/github.svg"
+              alt="GitHub"
+            />
+            Source-Code</a
+          ></span
+        >
+        {% endif %} {% for item in project.used %}
         <span class="project__used__item">{{item.thing}}</span>
         {% endfor %}
       </div>

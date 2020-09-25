@@ -1,3 +1,28 @@
+- name: Meine Apps
+  url: https://timozacherl.com/apps/
+  description: Meine Apps für iOS, macOS, tvOS, watchOS and Android.
+
+- name: Swiftdox
+  url: https://swiftdox.dev
+  code: https://github.com/TimoZacherl/swiftdox
+  description: Eine Open-Source Dokumentation für SwiftUI, die auf Beispielen und Code-Snippets basiert.
+  used:
+    - thing: Jekyll
+    - thing: Swift
+    - thing: Ruby
+    - thing: SCSS
+    - thing: HTML
+    - thing: Javascript
+
+- name: HTML2PDF API
+  url: https://github.com/TimoZacherl/html2pdf-api
+  code: https://github.com/TimoZacherl/html2pdf-api
+  description: Eine API, die Webseiten oder Dokumente (HTML & CSS) in PDF Dateien umwandelt.
+  used:
+    - thing: ExpressJS
+    - thing: Typescript
+    - thing: Node.js
+
 - name: NodeTS Boilerplate
   url: https://github.com/TimoZacherl/nodets-boilerplate
   code: https://github.com/TimoZacherl/nodets-boilerplate
