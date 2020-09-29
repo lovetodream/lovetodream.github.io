@@ -1,7 +1,6 @@
 # Site settings
 name: Timo Zacherl
 title: Timo Zacherl | Full-Stack Software Engineer
-description: Full-Stack Webentwickler mit Fokus auf die Entwicklung von zuverlässigen Webanwendungen mit modernsten Technologien.
 url: https://timozacherl.com/
 baseurl: ''
 email: t.zacherl@icloud.com
@@ -39,3 +38,6 @@ keep_files:
 plugins_dir:
   - jekyll-minifier
   - jekyll-sitemap
+
+plugins:
+  - jekyll-multiple-languages-plugin

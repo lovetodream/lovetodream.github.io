@@ -1,8 +1,9 @@
 <section class="section experience">
-  <div class="section__title">Laufbahn</div>
+  <div class="section__title">{% t experience.title %}</div>
   <div class="section__content">
     <div class="jobs">
-      {% for job in site.data.experience %}
+      {% capture experience-file %}{{ 'experience-' | append: site.lang }}{%
+      endcapture%} {% for job in site.data[experience-file] %}
       <div class="job">
         <div class="time-place">
           <div class="job__company">

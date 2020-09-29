@@ -1,0 +1,52 @@
+- name: My Apps
+  url: https://timozacherl.com/apps/
+  description: My Apps for iOS, macOS, tvOS, watchOS and Android.
+
+- name: Swiftdox
+  url: https://swiftdox.dev
+  code: https://github.com/TimoZacherl/swiftdox
+  description: An Open-Source Documentation for SwiftUI, based on examples and code-snippets.
+  used:
+    - thing: Jekyll
+    - thing: Swift
+    - thing: Ruby
+    - thing: SCSS
+    - thing: HTML
+    - thing: Javascript
+
+- name: HTML2PDF API
+  url: https://github.com/TimoZacherl/html2pdf-api
+  code: https://github.com/TimoZacherl/html2pdf-api
+  description: An API, which converts websites or documente (HTML & CSS) into printable PDF files.
+  used:
+    - thing: ExpressJS
+    - thing: Typescript
+    - thing: Node.js
+
+- name: NodeTS Boilerplate
+  url: https://github.com/TimoZacherl/nodets-boilerplate
+  code: https://github.com/TimoZacherl/nodets-boilerplate
+  description: A minimalistic template to start projects with NodeJS and Typescript faster, without setting up the same required stuff every time.
+  used:
+    - thing: Typescript
+    - thing: Node.js
+
+- name: Homepage Pfaller Heizung & Sanitär
+  url: https://pfaller-hls.de
+  description: A website boilerplate with content-management-system to change or add content without knowledge any time.
+  used:
+    - thing: Bludit
+    - thing: PHP
+    - thing: HTML
+    - thing: CSS
+    - thing: Bulma
+
+- name: Jumpy Forest
+  url: https://apps.apple.com/us/app/jumpy-forest/id1491560898
+  description: A mobile game for iOS, primarily created to familiarize myself with the app review process from Apple.
+  used:
+    - thing: Unity
+    - thing: C#
+    - thing: Affinity Designer
+    - thing: Xcode
+    - thing: App Store Connect

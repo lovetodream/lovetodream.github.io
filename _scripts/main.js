@@ -74,4 +74,14 @@ $(function() {
   sr.reveal('.experience', { viewFactor: 0.2 });
   sr.reveal('.featured-projects', { viewFactor: 0.1 });
   sr.reveal('.other-projects', { viewFactor: 0.05 });
+
+  if (
+    !(
+      navigator.language === 'de' ||
+      navigator.language === 'de-de' ||
+      navigator.language === 'de_DE'
+    )
+  ) {
+    window.location.replace('https://timozacherl.com/en');
+  }
 });

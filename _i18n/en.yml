@@ -1,0 +1,41 @@
+head:
+  description: Full-Stack Software Engineer with a focus on the development of reliable Web-Applications with the usage of modern technologies.
+
+intro:
+  title: Hello there!
+  content: I am <span class="name">Timo</span>, a Full-Stack Software Engineer with a focus on the development of reliable Web-Applications with the usage of mordern technologies.
+  action: Contact me
+
+background:
+  title: Background
+  leading: I am currently working as a Freelancer building things for the Web, either alone or together with others. I've learned the biggest part of my knowledge by myself. At the moment I am working on a few <a class="underline-link" href="https://opensource.org" target="_blank">Open-Source</a> projects on <a class="underline-link" href="https://github.com/TimoZacherl" target="_blank">GitHub</a>.
+  middle: As a Software Engineer, it is really important to close the gap between user-friendly design and reliable software &mdash; I combine my technical knowledge and my sense of great design to create a stunning product. My goal is to build applications that are scalable and efficient under the hood while providing engaging, pixel-perfect user experiences.
+  trailing: <strong>When I'm not in front of my computer</strong>, I'm probably riding my mountain bike or cruising around on my penny board.
+
+employment-status:
+  message: I am currently available for your orders!
+
+skills:
+  title: Skills
+  languages: Languages
+  frameworks: Frameworks
+  tools: Tools
+  design: Design
+
+experience:
+  title: Experience
+
+featured-projects:
+  title: Featured Projects
+  project-one:
+    description: A minimalistic website for "Peter Holzhandel" a locale business. All the information is on a single page simple to use and accessible to everyone.
+  project-two:
+    description: Landing page for a carpentry workshop, which compactly shows all the necessary information, whilst keeping a great design. The website provides the common ways to contact the business owner.
+
+other-projects:
+  title: Other Projects
+
+top-button: Back to the top
+
+not-found:
+  content: Looks like there's nothing here.<br />Maybe you should go back <a href="{{site.url}}">home</a>.

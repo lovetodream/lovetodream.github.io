@@ -11,6 +11,7 @@ const templatePath = [
   '*.yml',
   '_data/*.yml',
   '_posts/*',
+  '_i18n/*',
 ];
 
 module.exports = gulp => {
