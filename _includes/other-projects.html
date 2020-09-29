@@ -1,7 +1,8 @@
 <section class="section other-projects">
-  <div class="section__title">Weitere Projekte</div>
+  <div class="section__title">{% t other-projects.title %}</div>
   <div class="section__content">
-    {% for project in site.data.other-projects %}
+    {% capture projects-file %}{{ 'other-projects-' | append: site.lang }}{%
+    endcapture%} {% for project in site.data[projects-file] %}
     <div class="project">
       <div class="project__name">
         <a href="{{project.url}}" target="_blank" class="arrow-link"
@@ -12,7 +13,7 @@
       <div class="project__used">
         {% if project.code %}
         <span class="project__used__item"
-          ><a href="{{project.code}}"
+          ><a href="{{project.code}}" style="color: inherit"
             ><img
               height="14px"
               src="{{site.baseurl}}/img/social/github.svg"
