@@ -1,0 +1,38 @@
+head:
+  description: Full-Stack Webentwickler mit Fokus auf die Entwicklung von zuverlässigen Webanwendungen mit modernsten Technologien.
+
+intro:
+  title: Hallo!
+  content: Ich bin <span class="name">Timo</span>, ein Full-Stack Webentwickler mit Fokus auf die Entwicklung von zuverlässigen Webanwendungen mit Hilfe von modernsten Technologien.
+  action: Kontaktiere mich
+
+background:
+  title: Hintergrund
+  leading: Ich arbeite momentan nebenbei als Freiberuflicher Webentwickler und entwickle verschiedenste Dinge für's Web, entweder allein oder zusammen mit Anderen. Vor kurzem habe ich meine Ausbildung zum Fachinformatiker abgeschlossen. Den größten Teil meines Wissens habe ich mir trotzdem selbst angeeignet. Momentan arbeite ich an einigen <a class="underline-link" href="https://opensource.org" target="_blank">Open-Source</a> Projekten auf <a class="underline-link" href="https://github.com/TimoZacherl" target="_blank">GitHub</a>.
+  middle: Als Softwareentwickler lege ich viel Wert darauf, die Lücke zwischen benutzerfreundlichem Design und einer zuverlässigen Software zu füllen &mdash; ich kombiniere mein technisches Wissen und mein Auge fürs Design, um ein möglichst gutes Produkt zu kreieren. Mein Ziel ist es Anwendungen zu entwickeln, die unter der Haube skalierbar und effizient arbeiten, während sie dem Benutzer die bestmögliche Erfahrung liefern.
+  trailing: <strong>Wenn ich nicht vor dem Computer sitze</strong>, bin ich wahrscheinlich mit dem Mountain Bike oder dem Penny Board unterwegs.
+
+employment-status:
+  message: Ich stehe momentan für Aufträge zur Verfügung!
+
+experience:
+  title: Laufbahn
+
+skills:
+  title: Skills
+  languages: Sprachen
+  frameworks: Frameworks
+  tools: Tools
+  design: Design
+
+featured-projects:
+  title: Featured Projects
+  project-one:
+    description: Eine minimalistische Webseite für Peter Holzhandel aus Kottingwörth. Alle nötigen Informationen befinden sich kompakt und bündig auf einer einzelnen Seite, mit allen nötigen Kontaktinformationen.
+  project-two:
+    description: Landing Page für eine Zimmerei, die alle nötigen Informationen möglichst kompakt auflistet, während das Design nicht vernachlässigt wird und die üblichen Kontaktmöglichkeiten bietet.
+
+other-projects:
+  title: Weitere Projekte
+
+top-button: Zurück nach oben
