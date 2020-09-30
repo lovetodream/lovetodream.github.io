@@ -41,3 +41,6 @@ keep_files:
 plugins_dir:
   - jekyll-minifier
   - jekyll-sitemap
+
+plugins:
+  - jekyll-multiple-languages-plugin
