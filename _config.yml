@@ -18,7 +18,7 @@ social:
     url: https://github.com/timozacherl
 
 languages: ['de', 'en']
-exclude_from_localizations: ['javascript', 'images', 'css']
+exclude_from_localizations: ['js', 'img', 'css', 'fonts']
 
 # Build settings
 markdown: kramdown
@@ -32,6 +32,8 @@ exclude:
   - 'build'
   - 'gulpfile.js'
   - 'package.json'
+  - 'package-lock.json'
+  - 'scripts'
 
 keep_files:
   - 'CNAME'
