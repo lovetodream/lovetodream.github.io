@@ -80,7 +80,8 @@ $(function() {
       navigator.language === 'de' ||
       navigator.language === 'de-de' ||
       navigator.language === 'de_DE'
-    )
+    ) &&
+    !window.location.pathname.includes('en')
   ) {
     window.location.replace('https://timozacherl.com/en');
   }
