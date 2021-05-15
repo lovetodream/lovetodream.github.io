@@ -38,4 +38,4 @@ other-projects:
 top-button: Back to the top
 
 not-found:
-  content: Looks like there's nothing here.<br />Maybe you should go back <a href="{{site.url}}">home</a>.
+  content: Looks like there's nothing here.<br />Maybe you should go back <a href="/">home</a>.
