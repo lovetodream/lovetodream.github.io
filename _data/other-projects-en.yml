@@ -31,16 +31,6 @@
     - thing: Typescript
     - thing: Node.js
 
-- name: Homepage Pfaller Heizung & Sanitär
-  url: https://pfaller-hls.de
-  description: A website boilerplate with content-management-system to change or add content without knowledge any time.
-  used:
-    - thing: Bludit
-    - thing: PHP
-    - thing: HTML
-    - thing: CSS
-    - thing: Bulma
-
 - name: Jumpy Forest
   url: https://apps.apple.com/us/app/jumpy-forest/id1491560898
   description: A mobile game for iOS, primarily created to familiarize myself with the app review process from Apple.
