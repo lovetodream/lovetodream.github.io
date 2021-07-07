@@ -79,8 +79,10 @@ $(function() {
     !(
       navigator.language === 'de' ||
       navigator.language === 'de-de' ||
-      navigator.language === 'de_DE'
-    )
+      navigator.language === 'de_DE' ||
+      navigator.language === 'de-DE'
+    ) &&
+    !window.location.pathname.includes('en')
   ) {
     window.location.replace('https://timozacherl.com/en');
   }

@@ -38,4 +38,4 @@ other-projects:
 top-button: Zurück nach oben
 
 not-found:
-  content: Sieht aus als wäre hier nichts.<br />Vielleicht solltest du <a href="{{site.url}}">zurück</a> gehen.
+  content: Sieht aus als wäre hier nichts.<br />Vielleicht solltest du <a href="/">zurück</a> gehen.
