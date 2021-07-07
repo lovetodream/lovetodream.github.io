@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://timozacherl.com/sitemap.xml
