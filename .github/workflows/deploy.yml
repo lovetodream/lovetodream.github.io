@@ -1,0 +1,23 @@
+name: Deploy to Github Packges
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Build
+      run: |
+        npm ci
+        npm run build
+        
+    - name: Publish
+      run: npm run deply
+      env:
+        GH_USERNAME: ${{ secrets.GH_USERNAME }}
+        GH_EMAIL: ${{ secrets.GH_EMAIL }}
