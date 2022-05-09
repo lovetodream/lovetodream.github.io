@@ -2,6 +2,10 @@
     import codeedit from "$lib/assets/codeedit.png";
 </script>
 
+<svelte:head>
+    <title>Timo Zacherl</title>
+</svelte:head>
+
 <div class="container mx-auto max-w-screen-lg">
     <header class="space-y-8 my-24">
         <img src="https://avatars.githubusercontent.com/u/38291523?v=4" alt="Avatar" class="rounded-full w-24 h-24 ring-1 ring-gray-200 shadow-md">
