@@ -6,18 +6,19 @@ on:
 
 jobs:
   build:
+    concurrency: ci-${{ github.ref }}
     runs-on: ubuntu-latest
     
     steps:
     - uses: actions/checkout@v3
 
-    - name: Build
+    - name: Install and Build
       run: |
         npm ci
         npm run build
         
     - name: Publish
-      run: npm run deploy
-      env:
-        GH_USERNAME: ${{ secrets.GH_USERNAME }}
-        GH_EMAIL: ${{ secrets.GH_EMAIL }}
+      uses: JamesIves/github-pages-deploy-action@v4.3.3
+      with:
+        branch: gh-pages
+        folder: build
