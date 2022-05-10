@@ -6,10 +6,10 @@
     <title>Timo Zacherl</title>
 </svelte:head>
 
-<div class="container mx-auto max-w-screen-lg">
+<div class="container px-10 mx-auto max-w-screen-lg">
     <header class="space-y-8 my-24">
         <img src="https://avatars.githubusercontent.com/u/38291523?v=4" alt="Avatar" class="rounded-full w-24 h-24 ring-1 ring-gray-200 dark:ring-gray-800 shadow-md">
-        <h1 class="text-3xl font-bold tracking-wide flex items-center">Timo is a <a href="https://www.apple.com/swift/" target="_blank" class="mx-2 text-orange-600 hover:text-orange-700 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="inline-block h-8"><path fill="currentColor" fill-rule="evenodd" d="M448 156.09c0-4.51-.08-9-.2-13.52a196.31 196.31 0 0 0-2.58-29.42 99.62 99.62 0 0 0-9.22-28A94.08 94.08 0 0 0 394.84 44a99.17 99.17 0 0 0-28-9.22 195 195 0 0 0-29.43-2.59c-4.51-.12-9-.17-13.52-.2H124.14c-4.51 0-9 .08-13.52.2-2.45.07-4.91.15-7.37.27a171.68 171.68 0 0 0-22.06 2.32 103.06 103.06 0 0 0-21.21 6.1q-3.46 1.45-6.81 3.12a94.66 94.66 0 0 0-18.39 12.32c-1.88 1.61-3.69 3.28-5.43 5A93.86 93.86 0 0 0 12 85.17a99.45 99.45 0 0 0-9.22 28 196.31 196.31 0 0 0-2.54 29.4c-.13 4.51-.18 9-.21 13.52v199.83c0 4.51.08 9 .21 13.51a196.08 196.08 0 0 0 2.58 29.42 99.3 99.3 0 0 0 9.22 28A94.31 94.31 0 0 0 53.17 468a99.47 99.47 0 0 0 28 9.21 195 195 0 0 0 29.43 2.59c4.5.12 9 .17 13.52.2H323.91c4.51 0 9-.08 13.52-.2a196.59 196.59 0 0 0 29.44-2.59 99.57 99.57 0 0 0 28-9.21A94.22 94.22 0 0 0 436 426.84a99.3 99.3 0 0 0 9.22-28 194.79 194.79 0 0 0 2.59-29.42c.12-4.5.17-9 .2-13.51V172.14c-.01-5.35-.01-10.7-.01-16.05zm-69.88 241c-20-38.93-57.23-29.27-76.31-19.47-1.72 1-3.48 2-5.25 3l-.42.25c-39.5 21-92.53 22.54-145.85-.38A234.64 234.64 0 0 1 45 290.12a230.63 230.63 0 0 0 39.17 23.37c56.36 26.4 113 24.49 153 0-57-43.85-104.6-101-141.09-147.22a197.09 197.09 0 0 1-18.78-25.9c43.7 40 112.7 90.22 137.48 104.12-52.57-55.49-98.89-123.94-96.72-121.74 82.79 83.42 159.18 130.59 159.18 130.59 2.88 1.58 5 2.85 6.73 4a127.44 127.44 0 0 0 4.16-12.47c13.22-48.33-1.66-103.58-35.31-149.2C329.61 141.75 375 229.34 356.4 303.42c-.44 1.73-.95 3.4-1.44 5.09 38.52 47.4 28.04 98.17 23.13 88.59z"/></svg></a> Swift developer.</h1>
+        <h1 class="text-3xl font-bold tracking-wide">Timo is a <a href="https://www.apple.com/swift/" target="_blank" class="mx-2 text-orange-600 hover:text-orange-700 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="inline-block h-8 mb-1"><path fill="currentColor" fill-rule="evenodd" d="M448 156.09c0-4.51-.08-9-.2-13.52a196.31 196.31 0 0 0-2.58-29.42 99.62 99.62 0 0 0-9.22-28A94.08 94.08 0 0 0 394.84 44a99.17 99.17 0 0 0-28-9.22 195 195 0 0 0-29.43-2.59c-4.51-.12-9-.17-13.52-.2H124.14c-4.51 0-9 .08-13.52.2-2.45.07-4.91.15-7.37.27a171.68 171.68 0 0 0-22.06 2.32 103.06 103.06 0 0 0-21.21 6.1q-3.46 1.45-6.81 3.12a94.66 94.66 0 0 0-18.39 12.32c-1.88 1.61-3.69 3.28-5.43 5A93.86 93.86 0 0 0 12 85.17a99.45 99.45 0 0 0-9.22 28 196.31 196.31 0 0 0-2.54 29.4c-.13 4.51-.18 9-.21 13.52v199.83c0 4.51.08 9 .21 13.51a196.08 196.08 0 0 0 2.58 29.42 99.3 99.3 0 0 0 9.22 28A94.31 94.31 0 0 0 53.17 468a99.47 99.47 0 0 0 28 9.21 195 195 0 0 0 29.43 2.59c4.5.12 9 .17 13.52.2H323.91c4.51 0 9-.08 13.52-.2a196.59 196.59 0 0 0 29.44-2.59 99.57 99.57 0 0 0 28-9.21A94.22 94.22 0 0 0 436 426.84a99.3 99.3 0 0 0 9.22-28 194.79 194.79 0 0 0 2.59-29.42c.12-4.5.17-9 .2-13.51V172.14c-.01-5.35-.01-10.7-.01-16.05zm-69.88 241c-20-38.93-57.23-29.27-76.31-19.47-1.72 1-3.48 2-5.25 3l-.42.25c-39.5 21-92.53 22.54-145.85-.38A234.64 234.64 0 0 1 45 290.12a230.63 230.63 0 0 0 39.17 23.37c56.36 26.4 113 24.49 153 0-57-43.85-104.6-101-141.09-147.22a197.09 197.09 0 0 1-18.78-25.9c43.7 40 112.7 90.22 137.48 104.12-52.57-55.49-98.89-123.94-96.72-121.74 82.79 83.42 159.18 130.59 159.18 130.59 2.88 1.58 5 2.85 6.73 4a127.44 127.44 0 0 0 4.16-12.47c13.22-48.33-1.66-103.58-35.31-149.2C329.61 141.75 375 229.34 356.4 303.42c-.44 1.73-.95 3.4-1.44 5.09 38.52 47.4 28.04 98.17 23.13 88.59z"/></svg></a> Swift developer.</h1>
         <div class="space-y-6">
             <p class="text-xl font-light tracking-wide leading-relaxed">
                 He carefully crafts apps for
@@ -19,7 +19,12 @@
                 <a href="https://www.apple.com/watchos" target="_blank" class="text-cyan-600 font-medium bg-cyan-50 hover:bg-cyan-100 px-2 py-1 rounded-xl transition-colors dark:bg-cyan-800 dark:bg-opacity-20 dark:hover:bg-cyan-800 dark:hover:bg-opacity-30">watchOS</a>.
                 He even uses Swift on the Server with <a href="https://vapor.codes" target="_blank" class="text-purple-500 font-medium bg-purple-50 hover:bg-purple-100 px-2 py-1 rounded-xl transition-colors dark:bg-purple-800 dark:bg-opacity-20 dark:hover:bg-purple-800 dark:hover:bg-opacity-30">Vapor</a>.
             </p>
-            <p class="text-xl font-light tracking-wide flex items-center">He's also sponsoring and contributing to Open Source Projects including <a href="https://github.com/CodeEditApp/CodeEdit" target="_blank" class="mx-1 border-b border-dashed border-black border-opacity-40 hover:border-opacity-80 font-medium dark:hover:border-gray-200 transition-colors"><img src={codeedit} alt="" class="inline-block h-6" /> CodeEdit.</a></p>
+            <p class="text-xl font-light tracking-wide">
+                He's also sponsoring and contributing to Open Source Projects including 
+                <a href="https://github.com/CodeEditApp/CodeEdit" target="_blank" class="mx-1 border-b border-dashed border-black border-opacity-40 hover:border-opacity-80 font-medium dark:hover:border-gray-200 transition-colors">
+                    <img src={codeedit} alt="" class="inline-block h-6 mb-1" /> CodeEdit.
+                </a>
+            </p>
         </div>
         <ul class="flex space-x-6 pt-2">
             <li>
@@ -48,7 +53,7 @@
 </div>
 
 <footer class="bg-gray-50 dark:bg-zinc-800 py-16 border-t dark:border-gray-600">
-    <div class="container mx-auto max-w-screen-lg text-gray-500 dark:text-gray-100">
+    <div class="container px-10 mx-auto max-w-screen-lg text-gray-500 dark:text-gray-100">
         <div class="flex justify-between">
             <p class="text-sm font-extralight">Copyright © 2022 Timo Zacherl. All rights reserved. </p>
             <p><a href="/resume.txt" class="text-sm font-extralight text-gray-800 dark:text-gray-50 hover:text-black border-b border-transparent hover:border-gray-300 dark:hover:text-white transition-colors">Résumé</a></p>
