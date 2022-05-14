@@ -18,7 +18,7 @@ jobs:
         npm run build
       env:
         VITE_CMS_URL: ${{ secrets.VITE_CMS_URL }}
-        VITE_CMS_API_KEY: ${{ secrets.VITE_API_KEY }}
+        VITE_CMS_API_KEY: ${{ secrets.VITE_CMS_API_KEY }}
         
     - name: Publish
       uses: JamesIves/github-pages-deploy-action@v4.3.3
