@@ -1,45 +1,50 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-8f30705e.js",
+    "file": "start-87568cf7.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_index-bddb4715.js"
+      "_index-5bcdf9e9.js"
     ],
     "dynamicImports": [
       "src/routes/__layout.svelte",
-      ".svelte-kit/runtime/components/error.svelte",
+      "src/routes/__error.svelte",
       "src/routes/index.svelte"
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-111f6e44.js",
+    "file": "pages/__layout.svelte-1a95125e.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-bddb4715.js"
+      "_index-5bcdf9e9.js"
     ],
     "css": [
-      "assets/pages/__layout.svelte-bbb5433f.css"
+      "assets/pages/__layout.svelte-a3289e7c.css"
     ]
   },
-  ".svelte-kit/runtime/components/error.svelte": {
-    "file": "error.svelte-07ee7f6e.js",
-    "src": ".svelte-kit/runtime/components/error.svelte",
+  "src/routes/__error.svelte": {
+    "file": "pages/__error.svelte-10b1390d.js",
+    "src": "src/routes/__error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-bddb4715.js"
+      "_index-5bcdf9e9.js",
+      "_Socials-53e1eaa9.js"
+    ],
+    "css": [
+      "assets/pages/__error.svelte-fc4bc95d.css"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-d1867c90.js",
+    "file": "pages/index.svelte-b82c91c7.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-bddb4715.js"
+      "_index-5bcdf9e9.js",
+      "_Socials-53e1eaa9.js"
     ],
     "css": [
       "assets/pages/index.svelte-f4d74fd2.css"
@@ -48,7 +53,13 @@
       "assets/codeedit-d5a51a64.png"
     ]
   },
-  "_index-bddb4715.js": {
-    "file": "chunks/index-bddb4715.js"
+  "_index-5bcdf9e9.js": {
+    "file": "chunks/index-5bcdf9e9.js"
+  },
+  "_Socials-53e1eaa9.js": {
+    "file": "chunks/Socials-53e1eaa9.js",
+    "imports": [
+      "_index-5bcdf9e9.js"
+    ]
   }
 }
