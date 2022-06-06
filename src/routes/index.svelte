@@ -15,7 +15,7 @@
 </svelte:head>
 
 <header class="space-y-8">
-	<div class="container px-10 mx-auto max-w-screen-lg py-24 space-y-24">
+	<div class="container px-10 mx-auto max-w-screen-lg py-24 space-y-8">
 		<img
 			src="https://avatars.githubusercontent.com/u/38291523?v=4"
 			alt="Avatar"
