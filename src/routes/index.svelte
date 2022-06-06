@@ -151,14 +151,14 @@
 						{#each posts as post}
 							<a
 								href={`${variables.blogUrl}/posts/${post.slug}`}
-								class="group rounded-xl overflow-hidden max-w-2xl snap-start w-80 bg-white dark:bg-black dark:bg-opacity-90 transition-all"
+								class="group rounded-xl overflow-hidden max-w-2xl snap-start w-64 md:w-80 bg-white dark:bg-black dark:bg-opacity-90 transition-all"
 							>
 								<div>
 									<div class="overflow-hidden relative image-container">
 										<img
 											src={post.feature_image}
 											alt={post.feature_image_alt}
-											class="group-hover:scale-[1.03] transform"
+											class="group-hover:scale-[1.03] transform object-cover object-center"
 										/>
 									</div>
 									<div class="p-6">
