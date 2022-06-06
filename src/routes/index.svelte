@@ -91,7 +91,7 @@
 	<main transition:fade>
 		{#if projects.length > 0}
 			<section transition:fade>
-				<div class="container px-10 mx-auto max-w-screen-lg py-24 space-y-8">
+				<div class="container px-10 mx-auto max-w-screen-lg pb-24 space-y-8">
 					<div class="space-y-2">
 						<h2 class="text-xl tracking-wide font-medium">Featured Projects</h2>
 						<p class="text-lg tracking-wide font-light">
