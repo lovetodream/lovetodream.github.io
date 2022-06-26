@@ -24,7 +24,7 @@ jobs:
         VITE_BLOG_URL: ${{ secrets.VITE_BLOG_URL }}
         
     - name: Publish
-      uses: JamesIves/github-pages-deploy-action@v4.3.3
+      uses: JamesIves/github-pages-deploy-action@v4.3.4
       with:
         branch: gh-pages
         folder: build
