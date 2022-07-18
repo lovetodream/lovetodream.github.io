@@ -14,7 +14,7 @@ jobs:
 
     - name: Install and Build
       run: |
-        npm i
+        npm ci
         npm run build
       env:
         VITE_CMS_URL: ${{ secrets.VITE_CMS_URL }}
