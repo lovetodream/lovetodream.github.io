@@ -1,0 +1,101 @@
+{
+  "src/lib/assets/codeedit.png": {
+    "file": "immutable/assets/codeedit-d5a51a64.png",
+    "src": "src/lib/assets/codeedit.png"
+  },
+  ".svelte-kit/runtime/client/start.js": {
+    "file": "immutable/start-598bb252.js",
+    "src": ".svelte-kit/runtime/client/start.js",
+    "isEntry": true,
+    "imports": [
+      "_index-2f557540.js"
+    ],
+    "dynamicImports": [
+      "src/routes/__layout.svelte",
+      "src/routes/__error.svelte",
+      "src/routes/404.svelte",
+      "src/routes/index.svelte"
+    ]
+  },
+  "src/routes/__layout.svelte": {
+    "file": "immutable/pages/__layout.svelte-544a10d4.js",
+    "src": "src/routes/__layout.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-2f557540.js"
+    ],
+    "css": [
+      "immutable/assets/__layout-f0967a7e.css"
+    ]
+  },
+  "src/routes/__error.svelte": {
+    "file": "immutable/pages/__error.svelte-decc698e.js",
+    "src": "src/routes/__error.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-2f557540.js",
+      "_NotFound-0e712050.js",
+      "_Socials-bbffb4d5.js"
+    ]
+  },
+  "src/routes/404.svelte": {
+    "file": "immutable/pages/404.svelte-ecd736b6.js",
+    "src": "src/routes/404.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-2f557540.js",
+      "_NotFound-0e712050.js",
+      "_Socials-bbffb4d5.js"
+    ]
+  },
+  "src/routes/index.svelte": {
+    "file": "immutable/pages/index.svelte-b4c9d214.js",
+    "src": "src/routes/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-2f557540.js",
+      "_Socials-bbffb4d5.js"
+    ],
+    "css": [
+      "immutable/assets/index-71b0ddae.css"
+    ],
+    "assets": [
+      "immutable/assets/codeedit-d5a51a64.png"
+    ]
+  },
+  "_index-2f557540.js": {
+    "file": "immutable/chunks/index-2f557540.js"
+  },
+  "_NotFound-0e712050.js": {
+    "file": "immutable/chunks/NotFound-0e712050.js",
+    "imports": [
+      "_index-2f557540.js",
+      "_Socials-bbffb4d5.js"
+    ],
+    "css": [
+      "immutable/assets/NotFound-b777136e.css"
+    ]
+  },
+  "_Socials-bbffb4d5.js": {
+    "file": "immutable/chunks/Socials-bbffb4d5.js",
+    "imports": [
+      "_index-2f557540.js"
+    ]
+  },
+  "src/routes/__layout.css": {
+    "file": "immutable/assets/__layout-f0967a7e.css",
+    "src": "src/routes/__layout.css"
+  },
+  "NotFound.css": {
+    "file": "immutable/assets/NotFound-b777136e.css",
+    "src": "NotFound.css"
+  },
+  "src/routes/index.css": {
+    "file": "immutable/assets/index-71b0ddae.css",
+    "src": "src/routes/index.css"
+  }
+}

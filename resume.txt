@@ -7,7 +7,7 @@ Timo Zacherl
 Overview:
   Software Engineer
 
-  Designing and implementing software in Swift, Objectiv-C and Svelte for iOS, macOS, tvOS, watchOS and the web.
+  Designing and implementing software in Swift and Svelte for iOS, macOS, tvOS, watchOS and the web.
 
 
 
@@ -26,7 +26,7 @@ Professional Experience:
 
     - Designing and developing both Android and iOS Apps using Kotlin and Swift.
 
-    - Establish test-driven developing and growing test suite from zero to hundreds of tests.
+    - Established automated deployment using fastlane
 
 
   IT Specialist for System Integration (apprenticeship)
