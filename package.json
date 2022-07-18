@@ -41,6 +41,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"luxon": "^2.4.0"
+		"luxon": "2.5.0"
 	}
 }
