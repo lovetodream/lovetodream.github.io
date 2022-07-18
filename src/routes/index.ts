@@ -2,7 +2,7 @@ import type { RequestHandlerOutput, ResponseBody } from '@sveltejs/kit';
 import { variables } from '$lib/variables';
 import { api } from '$lib/api';
 
-export async function get(): Promise<RequestHandlerOutput> {
+export async function GET(): Promise<RequestHandlerOutput> {
     const response = await fetch(`${variables.cmsUrl}/api/projects?populate=*&sort[0]=id:desc`, { headers: { 'Authorization': `Bearer ${variables.cmsApiKey}` } });
     const data = await response.json();
 
