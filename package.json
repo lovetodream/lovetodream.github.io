@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "generate:css": "npx tailwindcss build -i Resources/TailwindTheme/theme.css -o Resources/TailwindTheme/styles.css -c Resources/TailwindTheme/tailwind.config.js"
+  },
+  "dependencies": {
+    "tailwindcss": "^3.1.6"
+  }
+}

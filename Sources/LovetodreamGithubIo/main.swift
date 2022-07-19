@@ -22,4 +22,4 @@ struct LovetodreamGithubIo: Website {
 }
 
 // This will generate your website using the built-in Foundation theme:
-try LovetodreamGithubIo().publish(withTheme: .foundation)
+try LovetodreamGithubIo().publish(withTheme: .tailwind)
