@@ -14,9 +14,9 @@ struct LovetodreamGithubIo: Website {
     }
 
     // Update these properties to configure your website:
-    var url = URL(string: "https://your-website-url.com")!
-    var name = "LovetodreamGithubIo"
-    var description = "A description of LovetodreamGithubIo"
+    var url = URL(string: "https://timozacherl.com")!
+    var name = "Timo Zacherl"
+    var description = "A Swift Developer crafting apps for iOS, macOS, tvOS and watchOS."
     var language: Language { .english }
     var imagePath: Path? { nil }
 }
