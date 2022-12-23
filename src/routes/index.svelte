@@ -3,11 +3,8 @@
 	import Socials from '$lib/components/Socials.svelte';
 	import { variables } from '$lib/variables';
 	import { fade } from 'svelte/transition';
-	import type { PostsOrPages } from '@tryghost/content-api';
-	import { DateTime } from 'luxon';
 
 	export let projects: any[];
-	export let posts: PostsOrPages;
 </script>
 
 <svelte:head>
@@ -87,118 +84,44 @@
 	</div>
 </header>
 
-{#if projects.length > 0 || posts.length > 0}
+{#if projects.length > 0}
 	<main transition:fade>
-		{#if projects.length > 0}
-			<section transition:fade>
-				<div class="container px-10 mx-auto max-w-screen-lg pb-24 space-y-8">
-					<div class="space-y-2">
-						<h2 class="text-xl tracking-wide font-medium">Featured Projects</h2>
-						<p class="text-lg tracking-wide font-light">
-							A collection of some side projects that have shipped recently.
-						</p>
-					</div>
+		<section transition:fade>
+			<div class="container px-10 mx-auto max-w-screen-lg pb-24 space-y-8">
+				<div class="space-y-2">
+					<h2 class="text-xl tracking-wide font-medium">Featured Projects</h2>
+					<p class="text-lg tracking-wide font-light">
+						A collection of some side projects that have shipped recently.
+					</p>
+				</div>
 
-					<div class="grid md:grid-cols-2 gap-8">
-						{#each projects as project}
-							<a
-								href={project.attributes.linkDestination}
-								class="group project {project.attributes.thumbnailClasses}"
-							>
-								<article class="flex justify-center items-center text-center flex-col">
-									<img
-										src={variables.cmsUrl +
-											project.attributes.appIcon.data.attributes.formats.thumbnail.url}
-										alt="Thumbnail"
-										loading="lazy"
-										class="w-auto h-24 mb-6 group-hover:scale-[1.15] transition-transform duration-700 ease-in-out rounded-3xl shadow-xl"
-									/>
-									<h3 class="text-lg font-semibold tracking-wide mb-[4px]">
-										{project.attributes.name}
-									</h3>
-									<p class="mb-[2px]">{project.attributes.summary}</p>
-									<p class="group-hover:opacity-90 link-label">
-										{project.attributes.linkLabel} &rarr;
-									</p>
-								</article>
-							</a>
-						{/each}
-					</div>
-				</div>
-			</section>
-		{/if}
-		{#if posts.length > 0}
-			<section transition:fade class="bg-gray-100 dark:bg-black dark:bg-opacity-50">
-				<div class="container px-10 mx-auto max-w-screen-lg py-24 space-y-8">
-					<div class="space-y-2">
-						<div class="flex flex-col md:flex-row justify-between md:items-end">
-							<div class="mb-2 md:mb-0">
-								<h2 class="text-xl tracking-wide font-medium">Recent Posts</h2>
-								<p class="text-lg tracking-wide font-light">
-									A collection of posts that I've recently published on my blog.
+				<div class="grid md:grid-cols-2 gap-8">
+					{#each projects as project}
+						<a
+							href={project.attributes.linkDestination}
+							class="group project {project.attributes.thumbnailClasses}"
+						>
+							<article class="flex justify-center items-center text-center flex-col">
+								<img
+									src={variables.cmsUrl +
+										project.attributes.appIcon.data.attributes.formats.thumbnail.url}
+									alt="Thumbnail"
+									loading="lazy"
+									class="w-auto h-24 mb-6 group-hover:scale-[1.15] transition-transform duration-700 ease-in-out rounded-3xl shadow-xl"
+								/>
+								<h3 class="text-lg font-semibold tracking-wide mb-[4px]">
+									{project.attributes.name}
+								</h3>
+								<p class="mb-[2px]">{project.attributes.summary}</p>
+								<p class="group-hover:opacity-90 link-label">
+									{project.attributes.linkLabel} &rarr;
 								</p>
-							</div>
-							<a
-								href={variables.blogUrl}
-								class="text-blue-500 dark:text-blue-600 hover:text-blue-400 dark:hover:text-blue-500 font-semibold text-xl md:mb-1 transition-colors"
-								>View Blog &rarr;</a
-							>
-						</div>
-					</div>
-					<div
-						class="overflow-x-scroll grid gap-8 grid-flow-col overscroll-contain snap-x snap-mandatory relative"
-					>
-						{#each posts as post}
-							<a
-								href={`${variables.blogUrl}/posts/${post.slug}`}
-								class="group rounded-xl overflow-hidden max-w-2xl snap-start w-64 md:w-80 bg-white dark:bg-black dark:bg-opacity-90 transition-all"
-							>
-								<div>
-									<div class="overflow-hidden relative image-container">
-										<img
-											src={post.feature_image}
-											alt={post.feature_image_alt}
-											class="group-hover:scale-[1.03] transform object-cover object-center"
-										/>
-									</div>
-									<div class="p-6">
-										<p
-											class="uppercase font-semibold tracking-wide text-gray-700 dark:text-gray-400 text-sm"
-										>
-											{post.primary_tag?.name}
-										</p>
-										<h3
-											class="dark:text-white mt-1 font-semibold tracking-wide text-xl group-hover:underline underline-offset-2"
-										>
-											{post.title}
-										</h3>
-										<p
-											class="mt-3 text-gray-600 dark:text-gray-500 font-medium text-sm flex items-center"
-										>
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												class="h-5 w-5 inline-block mr-1"
-												fill="none"
-												viewBox="0 0 24 24"
-												stroke="currentColor"
-												stroke-width="2"
-											>
-												<path
-													stroke-linecap="round"
-													stroke-linejoin="round"
-													d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-												/>
-											</svg>
-											{DateTime.fromISO(post.published_at ?? '').toRelative({ locale: 'en' })}
-										</p>
-									</div>
-								</div>
-							</a>
-						{/each}
-					</div>
+							</article>
+						</a>
+					{/each}
 				</div>
-			</section>
-		{/if}
+			</div>
+		</section>
 	</main>
 {/if}
 
@@ -221,14 +144,5 @@
 
 	.project.blue-hover .link-label {
 		@apply text-blue-400 transition-opacity;
-	}
-
-	.image-container::after {
-		content: '';
-		@apply absolute top-0 left-0 w-full h-full transition-colors;
-	}
-
-	.group:hover .image-container::after {
-		background-color: rgba(0, 0, 0, 0.1);
 	}
 </style>
