@@ -3,8 +3,9 @@
 	import Socials from '$lib/components/Socials.svelte';
 	import { variables } from '$lib/variables';
 	import { fade } from 'svelte/transition';
+	import type { PageData } from './$types';
 
-	export let projects: any[];
+	export let data: PageData;
 </script>
 
 <svelte:head>
@@ -91,7 +92,7 @@
 	</div>
 </header>
 
-{#if projects.length > 0}
+{#if data.projects?.length > 0}
 	<main transition:fade>
 		<section transition:fade>
 			<div class="container px-10 mx-auto max-w-screen-lg pb-24 space-y-8">
@@ -103,7 +104,7 @@
 				</div>
 
 				<div class="grid md:grid-cols-2 gap-8">
-					{#each projects as project}
+					{#each data.projects as project}
 						<a
 							href={project.attributes.linkDestination}
 							class="group project {project.attributes.thumbnailClasses}"
