@@ -4,7 +4,7 @@
     "src": "src/lib/assets/codeedit.png"
   },
   ".svelte-kit/runtime/client/start.js": {
-    "file": "immutable/start-d217b311.js",
+    "file": "immutable/start-f4ec81d4.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
