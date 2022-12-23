@@ -22,6 +22,7 @@
 			Timo is a <a
 				href="https://www.apple.com/swift/"
 				target="_blank"
+				rel="noreferrer"
 				class="mx-2 text-orange-600 hover:text-orange-700 transition-colors"
 				><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="inline-block h-8 mb-1"
 					><path
@@ -38,18 +39,21 @@
 				<a
 					href="https://www.apple.com/ios"
 					target="_blank"
+					rel="noreferrer"
 					class="text-red-600 font-medium bg-red-50 hover:bg-red-100 px-2 py-1 rounded-xl transition-colors dark:bg-red-800 dark:bg-opacity-20 dark:hover:bg-red-800 dark:hover:bg-opacity-30"
 					>iOS</a
 				>,
 				<a
 					href="https://www.apple.com/macos"
 					target="_blank"
+					rel="noreferrer"
 					class="text-blue-600 font-medium bg-blue-50 hover:bg-blue-100 px-2 py-1 rounded-xl transition-colors dark:bg-blue-800 dark:bg-opacity-20 dark:hover:bg-blue-800 dark:hover:bg-opacity-30"
 					>macOS</a
 				>,
 				<a
 					href="https://www.apple.com/tvos"
 					target="_blank"
+					rel="noreferrer"
 					class="text-gray-600 font-medium bg-gray-50 hover:bg-gray-100 px-2 py-1 rounded-xl transition-colors dark:bg-gray-100 dark:bg-opacity-10 dark:hover:bg-gray-100 dark:hover:bg-opacity-20 dark:text-gray-200"
 					>tvOS</a
 				>
@@ -57,12 +61,14 @@
 				<a
 					href="https://www.apple.com/watchos"
 					target="_blank"
+					rel="noreferrer"
 					class="text-cyan-600 font-medium bg-cyan-50 hover:bg-cyan-100 px-2 py-1 rounded-xl transition-colors dark:bg-cyan-800 dark:bg-opacity-20 dark:hover:bg-cyan-800 dark:hover:bg-opacity-30"
 					>watchOS</a
 				>. He even uses Swift on the Server with
 				<a
 					href="https://vapor.codes"
 					target="_blank"
+					rel="noreferrer"
 					class="text-purple-500 font-medium bg-purple-50 hover:bg-purple-100 px-2 py-1 rounded-xl transition-colors dark:bg-purple-800 dark:bg-opacity-20 dark:hover:bg-purple-800 dark:hover:bg-opacity-30"
 					>Vapor</a
 				>.
@@ -72,6 +78,7 @@
 				<a
 					href="https://github.com/CodeEditApp/CodeEdit"
 					target="_blank"
+					rel="noreferrer"
 					class="mx-1 border-b border-dashed border-black border-opacity-40 hover:border-opacity-80 font-medium dark:hover:border-gray-200 transition-colors"
 				>
 					<img src={codeedit} alt="" class="inline-block h-6 mb-1" /> CodeEdit.
