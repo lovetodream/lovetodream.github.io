@@ -1,0 +1,1 @@
+import{v as e}from"./variables-693aba84.js";const t=!0,a=async()=>({projects:(await(await fetch(`${e.cmsUrl}/api/projects?populate=*&sort[0]=id:desc`,{headers:{Authorization:`Bearer ${e.cmsApiKey}`}})).json()).data}),n=Object.freeze(Object.defineProperty({__proto__:null,prerender:t,load:a},Symbol.toStringTag,{value:"Module"}));export{n as _,a as l,t as p};
