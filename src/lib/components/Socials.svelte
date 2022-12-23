@@ -3,6 +3,7 @@
 		<a
 			href="https://github.com/lovetodream"
 			target="_blank"
+			rel="noreferrer"
 			class="ring-1 ring-gray-200 hover:bg-gray-50 dark:ring-gray-700 dark:bg-gray-800 dark:bg-opacity-30 dark:hover:bg-gray-800 dark:hover:bg-opacity-60 w-14 h-14 inline-flex items-center justify-center rounded-full transition-colors"
 		>
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="w-8 h-8">
@@ -18,6 +19,7 @@
 		<a
 			href="https://www.linkedin.com/in/timo-zacherl-8647531b6/"
 			target="_blank"
+			rel="noreferrer"
 			class="ring-1 ring-blue-200 hover:bg-blue-50 dark:ring-blue-800 dark:ring-opacity-60 dark:bg-blue-800 dark:bg-opacity-10 dark:hover:bg-blue-800 dark:hover:bg-opacity-20 w-14 h-14 inline-flex items-center justify-center rounded-full transition-colors"
 		>
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="text-blue-500 w-8 h-8">
@@ -33,6 +35,7 @@
 		<a
 			href="mailto:timo@swiftbytimo.com"
 			target="_blank"
+			rel="noreferrer"
 			class="ring-1 ring-purple-200 hover:bg-purple-50 dark:ring-purple-800 dark:ring-opacity-60 dark:bg-purple-800 dark:bg-opacity-10 dark:hover:bg-purple-800 dark:hover:bg-opacity-20 w-14 h-14 inline-flex items-center justify-center rounded-full transition-colors"
 		>
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="text-purple-500 w-8 h-8">
