@@ -1,5 +1,5 @@
 <script>
-	import Socials from './Socials.svelte';
+	import Socials from '$lib/components/Socials.svelte';
 </script>
 
 <main class="flex justify-center items-center flex-1 text-center">
