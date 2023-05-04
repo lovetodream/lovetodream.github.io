@@ -1,1 +1,0 @@
-const b={cmsUrl:"https://cms.nxtaws.com",cmsApiKey:"06639fa99d88cb74f45b74962fc3f126523378bc14cefc2df0868a6da4203a2473b1313920ad0cee9b33d4d9b364edd201beb4528e780bc9bafc607cbe159dfc21fa316c477089bb8e37d2fa089a760f9151becad7ebf12a2b9366429efec444b8f28e2b1ab9f8aa66d264cd61dc26f6da908a895014988ab06bfd20ea4fd9fb"};export{b as v};
