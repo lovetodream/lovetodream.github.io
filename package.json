@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "generate:css": "npx tailwindcss build -i Resources/TailwindTheme/theme.css -o Resources/TailwindTheme/styles.css -c tailwind.config.js",
+    "generate:css": "npx tailwindcss build -i Themes/TailwindTheme/theme.css -o Themes/TailwindTheme/styles.css -c tailwind.config.js",
     "start": "yarn generate:css && publish run",
     "kill": "lsof -i :8000 -s TCP:LISTEN | awk 'NR > 1 {print $2}' | xargs kill -15"
   },
