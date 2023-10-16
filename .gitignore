@@ -1,7 +1,11 @@
+# elm-package generated files
+elm-stuff
+# elm-repl generated files
+repl-temp-*
 .DS_Store
-/build
-/.build
-/.swiftpm
-/*.xcodeproj
-.publish
-/node_modules
+
+# compiled stuff
+!tailwind.config.js
+*.js
+public/assets/css/app.css
+out
