@@ -12,19 +12,15 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Install and Build
-        run: |
-          npm ci
-          npm run build
-        env:
-          VITE_CMS_URL: ${{ secrets.VITE_CMS_URL }}
-          VITE_CMS_API_KEY: ${{ secrets.VITE_CMS_API_KEY }}
-          VITE_GHOST_URL: ${{ secrets.VITE_GHOST_URL }}
-          VITE_GHOST_KEY: ${{ secrets.VITE_GHOST_KEY }}
-          VITE_BLOG_URL: ${{ secrets.VITE_BLOG_URL }}
+      - uses: jorelali/setup-elm@v5
+        with:
+          elm-version: 0.19.1
+
+      - name: Compile
+        run: ./compile.sh -t tailwindcss-linux-x64
 
       - name: Publish
         uses: JamesIves/github-pages-deploy-action@v4.4.2
         with:
           branch: gh-pages
-          folder: build
+          folder: out
