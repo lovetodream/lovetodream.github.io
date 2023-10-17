@@ -26,3 +26,4 @@ mkdir out
 cp -R public out/public
 rm -rf out/public/pcss
 cp *.html out/
+cp -R static/* out/
