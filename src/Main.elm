@@ -1,11 +1,8 @@
 module Main exposing (..)
 
 import Browser
-import Html exposing (Html, div, p, a, text, section, h1, h2, ul, li, img, article, main_)
-import Html.Attributes exposing (attribute, class, href, target, attribute, draggable, src, alt)
-import Html exposing (h3)
-import Html.Attributes exposing (rel)
-import Html exposing (header)
+import Html exposing (Html, div, p, a, text, section, h1, h2, ul, li, img, article, main_, h3, header, node)
+import Html.Attributes exposing (attribute, class, href, target, attribute, draggable, src, alt, rel, id, style)
 import Models exposing (..)
 import Components.Footer exposing (footerSection)
 
@@ -30,10 +27,32 @@ view model =
 page : Model -> Html Msg
 page model =
     -- general website layout
-    div [ class "min-h-screen flex flex-col justify-between text-gray-800 dark:bg-stone-900 dark:text-gray-200" ]
+    div [ class "min-h-screen flex flex-col justify-between text-gray-800 dark:text-gray-200" ]
         [ headerSection model
         , viewPortfolioSection model
         , footerSection
+        , canvasBackground
+        ]
+
+
+w : number
+w = 400
+h : number
+h = 400
+
+canvasBackground : Html Msg
+canvasBackground =
+    div 
+        [ class "fixed inset-0 pointer-events-none print:hidden"
+        , style "z-index" "-1"
+        , style "mask-image" "radial-gradient(circle, transparent, black)"
+        , style "--webkit-mask-image" "radial-gradient(circle, transparent, black)"
+        ]
+        [ node "canvas" 
+            [ attribute "width" (String.fromFloat w) 
+            , attribute "height" (String.fromFloat h)
+            , id "canvas" ]
+            []
         ]
 
 
@@ -127,7 +146,7 @@ viewPortfolioItem { name, description, image, link, linkLabel, projectClass, lin
                 ""
     in
     -- Recent work items
-    a (class ("group bg-gray-50 dark:bg-stone-800 ring-1 ring-gray-100 dark:ring-gray-700 p-10 rounded-2xl transition-colors duration-300 " ++ projectClass) :: projectLink) 
+    a (class ("group bg-gray-50 dark:bg-zinc-800 ring-1 ring-gray-100 dark:ring-gray-700 p-10 rounded-2xl transition-colors duration-300 " ++ projectClass) :: projectLink) 
     [
         article [ class "flex justify-center items-center text-center flex-col" ] 
         [
