@@ -5407,6 +5407,14 @@ var $author$project$Models$update = F2(
 				$elm$core$Platform$Cmd$none);
 		}
 	});
+var $elm$virtual_dom$VirtualDom$attribute = F2(
+	function (key, value) {
+		return A2(
+			_VirtualDom_attribute,
+			_VirtualDom_noOnOrFormAction(key),
+			_VirtualDom_noJavaScriptOrHtmlUri(value));
+	});
+var $elm$html$Html$Attributes$attribute = $elm$virtual_dom$VirtualDom$attribute;
 var $elm$json$Json$Encode$string = _Json_wrap;
 var $elm$html$Html$Attributes$stringProperty = F2(
 	function (key, string) {
@@ -5417,6 +5425,45 @@ var $elm$html$Html$Attributes$stringProperty = F2(
 	});
 var $elm$html$Html$Attributes$class = $elm$html$Html$Attributes$stringProperty('className');
 var $elm$html$Html$div = _VirtualDom_node('div');
+var $elm$core$String$fromFloat = _String_fromNumber;
+var $author$project$Main$h = 400;
+var $elm$html$Html$Attributes$id = $elm$html$Html$Attributes$stringProperty('id');
+var $elm$virtual_dom$VirtualDom$node = function (tag) {
+	return _VirtualDom_node(
+		_VirtualDom_noScript(tag));
+};
+var $elm$html$Html$node = $elm$virtual_dom$VirtualDom$node;
+var $elm$virtual_dom$VirtualDom$style = _VirtualDom_style;
+var $elm$html$Html$Attributes$style = $elm$virtual_dom$VirtualDom$style;
+var $author$project$Main$w = 400;
+var $author$project$Main$canvasBackground = A2(
+	$elm$html$Html$div,
+	_List_fromArray(
+		[
+			$elm$html$Html$Attributes$class('fixed inset-0 pointer-events-none print:hidden'),
+			A2($elm$html$Html$Attributes$style, 'z-index', '-1'),
+			A2($elm$html$Html$Attributes$style, 'mask-image', 'radial-gradient(circle, transparent, black)'),
+			A2($elm$html$Html$Attributes$style, '--webkit-mask-image', 'radial-gradient(circle, transparent, black)')
+		]),
+	_List_fromArray(
+		[
+			A3(
+			$elm$html$Html$node,
+			'canvas',
+			_List_fromArray(
+				[
+					A2(
+					$elm$html$Html$Attributes$attribute,
+					'width',
+					$elm$core$String$fromFloat($author$project$Main$w)),
+					A2(
+					$elm$html$Html$Attributes$attribute,
+					'height',
+					$elm$core$String$fromFloat($author$project$Main$h)),
+					$elm$html$Html$Attributes$id('canvas')
+				]),
+			_List_Nil)
+		]));
 var $elm$html$Html$a = _VirtualDom_node('a');
 var $elm$html$Html$footer = _VirtualDom_node('footer');
 var $elm$html$Html$Attributes$href = function (url) {
@@ -5501,14 +5548,6 @@ var $author$project$Components$Footer$footerSection = A2(
 				]))
 		]));
 var $elm$html$Html$Attributes$alt = $elm$html$Html$Attributes$stringProperty('alt');
-var $elm$virtual_dom$VirtualDom$attribute = F2(
-	function (key, value) {
-		return A2(
-			_VirtualDom_attribute,
-			_VirtualDom_noOnOrFormAction(key),
-			_VirtualDom_noJavaScriptOrHtmlUri(value));
-	});
-var $elm$html$Html$Attributes$attribute = $elm$virtual_dom$VirtualDom$attribute;
 var $elm$html$Html$h1 = _VirtualDom_node('h1');
 var $elm$html$Html$header = _VirtualDom_node('header');
 var $elm$html$Html$img = _VirtualDom_node('img');
@@ -5765,7 +5804,7 @@ var $author$project$Main$viewPortfolioItem = function (_v0) {
 		$elm$html$Html$a,
 		A2(
 			$elm$core$List$cons,
-			$elm$html$Html$Attributes$class('group bg-gray-50 dark:bg-stone-800 ring-1 ring-gray-100 dark:ring-gray-700 p-10 rounded-2xl transition-colors duration-300 ' + projectClass),
+			$elm$html$Html$Attributes$class('group bg-gray-50 dark:bg-zinc-800 ring-1 ring-gray-100 dark:ring-gray-700 p-10 rounded-2xl transition-colors duration-300 ' + projectClass),
 			projectLink),
 		_List_fromArray(
 			[
@@ -5886,13 +5925,14 @@ var $author$project$Main$page = function (model) {
 		$elm$html$Html$div,
 		_List_fromArray(
 			[
-				$elm$html$Html$Attributes$class('min-h-screen flex flex-col justify-between text-gray-800 dark:bg-stone-900 dark:text-gray-200')
+				$elm$html$Html$Attributes$class('min-h-screen flex flex-col justify-between text-gray-800 dark:text-gray-200')
 			]),
 		_List_fromArray(
 			[
 				$author$project$Main$headerSection(model),
 				$author$project$Main$viewPortfolioSection(model),
-				$author$project$Components$Footer$footerSection
+				$author$project$Components$Footer$footerSection,
+				$author$project$Main$canvasBackground
 			]));
 };
 var $author$project$Main$site_title = 'Timo Zacherl - Software Engineer';
